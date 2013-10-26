@@ -124,7 +124,7 @@ class DPS_ViewMusic(DP_View):
 		self["txt_red"]     = Label()
 		self["txt_filter"]  = Label()
 		self["txt_blue"]    = Label()
-		self["txt_blue"].setText(_("toogle View ") + _("(current 'Default')"))
+		self["txt_blue"].setText(_("toggle View ") + _("(current 'Default')"))
 		self["txt_yellow"]    = Label()
 		
 		if self.fastScroll == True:
@@ -657,7 +657,7 @@ class DPS_ViewMusic(DP_View):
 		'''
 		printl("", self, "S")
 		
-		text = "toogle Sorting (sorted %s)" % (_(self.activeSort[0]))
+		text = "toggle Sorting (sorted %s)" % (_(self.activeSort[0]))
 		self["txt_red"].setText(text)
 		super(getViewClass(), self).sort()
 		self.areFunctionsHidden = True
